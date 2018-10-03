@@ -1,4 +1,4 @@
-#Fallstudie ISF
+# Fallstudie ISF
 
 ## Was könnte schiefgehen?
 
@@ -16,6 +16,9 @@ Es folgt eine Liste mit Dingen, welche schiefgehen können:
 1. Das Wireless ist wahrscheinlich öffentlich Sichtbar. Dadurch besteht ein Risiko durch die Nachbarn.
 1. Windows Betriebssysteme besitzen zwar den Bitlocker, jedoch ist dieser Standardmässig nicht eingeschaltet und kann auch nur von forgeschrittenen Usern bedient werden. Dadurch sind die Daten auf den Disks nicht verschlüsselt und können unter Umständen ausgelesen werden.
 1. Falls Herr Meier zu Hause mit Daten von der Verwaltung arbeitet, kann das (Datenschutztechnischt) ein grosses Problem sein.
+1. Bei einem Brand wären alle Compute zerstört und es könnten keine Daten wiederhergestellt werden. 
+1. Die 12-jährige Dora könnte unkontrolliert Software installieren, welche Viren beinhaltet. Auch allfällige Toolbars sind bei Kindern schnell installiert.
+1. Benutzen die Kinder und die Eltern das selbe Mailkonto? Dies könnte allenfalls auch zu einem Risiko werden. Nicht alle Mails der Eltern sind für die Augen der Kinder gedacht.
 
 ## Massnahmenplan
 
