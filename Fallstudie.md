@@ -1,3 +1,17 @@
+---
+title: "Fallstudie Minicase - ISF"
+author: [Florian Bär]
+date: "2018-10-30"
+subject: "Information Security Fundamentals"
+keywords: [Information Security, ISF, HSLU]
+subtitle: "Mini-Case"
+titlepage: true
+titlepage-color: "06386e"
+titlepage-text-color: "FFFFFF"
+titlepage-rule-color: "FFFFFF"
+titlepage-rule-height: 1
+...
+\newpage
 # Fallstudie ISF - Version 2
 
 ## Was könnte schiefgehen?
