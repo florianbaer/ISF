@@ -1,7 +1,7 @@
 ---
 title: "Fallstudie Minicase"
 author: [Florian Bär]
-date: "2018-10-30"
+date: "HS18"
 subject: "Information Security Fundamentals"
 keywords: [Information Security, ISF, HSLU]
 subtitle: "Information Security Fundamentals"
@@ -10,7 +10,7 @@ titlepage: true
 titlepage-color: "06386e"
 titlepage-text-color: "FFFFFF"
 titlepage-rule-color: "FFFFFF"
-titlepage-rule-height: 1
+titlepage-rule-height: 3
 ...
 \newpage
 # Einführung zum MiniCase
@@ -35,63 +35,63 @@ Es folgt eine Liste mit Dingen, welche schiefgehen können:
 1. Das Wireless brauch WEP. WEP ist veraltet und nicht sicher. Es ist ein upgrade zu WPA2 empfohlen.
     - Eintrittswahrscheinlichkeit: 4
     - Schaden: 4
-    - RISIKO - Extrem
+    - RISIKO - Extrem (16)
 1. Es sollte vermieden werden, dass auf dem gleichen PC spiele gespielt werden sowie gearbeitet wird. Da Desktop-Computer allerdings eine bessere Rechenleistung haben, werden die Spiele mit grosser Wahrscheinlichkeit auf dem Desktop gespielt.
     - Eintrittswahrscheinlichkeit: 3
     - Schaden: 2
-    - RISIKO - Mittel
+    - RISIKO - Mittel (6)
 1. Die Spiele und Tools, welche Onkel Özutück mitbringt, könnten gecrackt sein. Cracks beinhalten ein Sicherheitsrisiko. Selbst wenn Sie nicht gefährlich sind, dann sind diese wahrscheinlich nicht gekauft. 
     - Eintrittswahrscheinlichkeit: 4
     - Schaden: 4
-    - RISIKO - Extrem
+    - RISIKO - Extrem (16)
 1. Da Jan ein Computerfreak ist, versucht er bestimmt immer neue Dinge. Dabei wird das Sicherheitsrisiko von diesen "Nerd"-Tools oftmals unterschätzt.
     - Eintrittswahrscheinlichkeit: 3
     - Schaden: 4
-    - RISIKO - Hoch
+    - RISIKO - Hoch (12)
 1. Dora ist mit 12 Jahren ein junges Kind. Vor allem bei jungen Kindern sollte der Internetkonsum  kontrolliert werden. Dazu gibt es passende Kinderschutzsoftware.
     - Eintrittswahrscheinlichkeit: 4
     - Schaden: 4
-    - RISIKO - Extrem
+    - RISIKO - Extrem (16)
 1. Die Computer müssten auf einem NAS oder einem sonstigen Server ein Backup haben. Falls einmal eine HD kaputt gehen sollte, müssen die Daten wiederherstellbar sein.
     - Eintrittswahrscheinlichkeit: 3
     - Schaden: 3
-    - RISIKO - Hoch
+    - RISIKO - Hoch (9)
 1. Die Kameras könnten von einem Billighersteller sein, welcher die Sicherheitsysteme des Systems nicht sehr verantwortungsvoll implementiert. Diese könnten dann "gehackt" werden und einen grossen Eingriff in die Privatsphäre der Familie.
     - Eintrittswahrscheinlichkeit: 2
     - Schaden: 3
-    - RISIKO - Mittel
+    - RISIKO - Mittel (6)
 1. Für die Sensoren gelten die selben Risiken wie für die Kameras. Diese können ebenfalls als "Türe" zum Netz dienen.
     - Eintrittswahrscheinlichkeit: 2
     - Schaden: 3
-    - RISIKO - Mittel
+    - RISIKO - Mittel (6)
 1. Der Desktop PC der Eltern sollte nicht gleichzeitig als PC und als Printserver verwendet werden. Server öffnen normalerweise Ports und Services für das Netzwerk und können so ein Sicherheitsrisiko darstellen.
     - Eintrittswahrscheinlichkeit: 3
     - Schaden: 4
-    - RISIKO - Hoch
+    - RISIKO - Hoch (8)
 1. Das Wireless ist wahrscheinlich öffentlich sichtbar. Dadurch besteht ein Risiko durch die Nachbarn.
     - Eintrittswahrscheinlichkeit: 4
     - Schaden: 1
-    - RISIKO - Mttel
+    - RISIKO - Mttel (4)
 1. Windows Betriebssysteme besitzen zwar den Bitlocker, jedoch ist dieser Standardmässig nicht eingeschaltet und kann auch nur von forgeschrittenen Usern bedient werden. Dadurch sind die Daten auf den Disks nicht verschlüsselt und können unter Umständen ausgelesen werden.
     - Eintrittswahrscheinlichkeit: 2
     - Schaden: 3
-    - RISIKO - Hoch
+    - RISIKO - Hoch (6)
 1. Falls Herr Meier zu Hause mit Daten von der Verwaltung arbeitet, kann das (Datenschutztechnischt) ein grosses Problem sein.
     - Eintrittswahrscheinlichkeit: 4
     - Schaden: 4
-    - RISIKO - Extrem
+    - RISIKO - Extrem (16)
 1. Bei einem Brand wären alle Computer zerstört und es könnten keine Daten wiederhergestellt werden. 
     - Eintrittswahrscheinlichkeit: 1
     - Schaden: 4
-    - RISIKO - Mittel
+    - RISIKO - Mittel (4)
 1. Die 12-jährige Dora könnte unkontrolliert Software installieren, welche Viren beinhaltet. Auch allfällige Toolbars sind bei Kindern schnell installiert.
     - Eintrittswahrscheinlichkeit: 4
     - Schaden: 2
-    - RISIKO - Hoch
+    - RISIKO - Hoch (8)
 1. Benutzen die Kinder und die Eltern das selbe Mailkonto? Dies könnte allenfalls auch zu einem Risiko werden. Nicht alle Mails der Eltern sind für die Augen der Kinder gedacht.
     - Eintrittswahrscheinlichkeit: 3
     - Schaden: 2
-    - RISIKO - Mittel
+    - RISIKO - Mittel (6)
 
 ## Massnahmenplan
 
@@ -154,5 +154,6 @@ Es folgt eine Liste mit Dingen, welche schiefgehen können:
     - AdWare und andere Schadsoftware wird auf dem Smartphone und Tablet erkannt. Somit sind nicht nur die Daten besser gschützt.
     - Eintrittswahrscheinlichkeit: 2
     - Schaden: 1
+
 
 Dieser Inhalt wurde eigenständig von Florian Bär (florian.baer@stud.hslu.ch) erstellt. 
