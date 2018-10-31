@@ -10,6 +10,8 @@
 \subtitle{Information Security Fundamentals}
 \pagenumbering{arabic}
 
+\newcommand*{\thead}[1]{\multicolumn{1}{c}{\bfseries #1}}
+
 \rfoot{Page \thepage \hspace{1pt} of \pageref{LastPage}}
 
 \begin{document}
@@ -98,6 +100,23 @@ einem Risiko werden. Nicht alle Mails sind für die Augen der Kinder gedacht.
 
 
 \subsubsection{Risikomatrix}
+
+\begin{tabular}{|r|c|c|c|}
+	\hline
+	\thead{Risiko ID} & \thead{EW\footnote{Eintrittswahrscheinlichkeit}} & \thead{SG\footnote{Schadensgrösse}} & \thead{R\footnote{Risiko}} \\ \hline
+	1 &  \cellcolor{blue!25}b & c & d \\ \hline
+	2 & b & c & d \\ \hline
+	3 &  \cellcolor{blue!25}b & c & d \\ \hline
+	4 & b & c & d \\ \hline
+	5 &  \cellcolor{blue!25}b & c & d \\ \hline
+	6 & b & c & d \\ \hline
+	7 &  \cellcolor{blue!25}b & c & d \\ \hline
+	8 & b & c & d \\ \hline
+	9 &  \cellcolor{blue!25}b & c & d \\ \hline
+	10 & b & c & d \\ \hline
+\end{tabular}
+
+
 
 
 \subsection{Massnahmen}
