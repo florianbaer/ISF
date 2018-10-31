@@ -1,23 +1,47 @@
 \documentclass{article}
 
 \usepackage[utf8]{inputenc}
-\usepackage[german]{babel}
+\usepackage[ngerman]{babel} 
 \usepackage{fancyhdr}
 \usepackage{lastpage}
+%\usepackage{lscape} % ohne Ändern der Seite
+\usepackage{pdflscape} % mit Ändern der Seite
+\usepackage{colortbl}
 
-\author{Florian Bär}
-\title{Fallstudie Minicase}
-\subtitle{Information Security Fundamentals}
+\definecolor{red}{RGB}{255,0,0}
+\definecolor{orange}{RGB}{255,165,0}
+\definecolor{yellow}{RGB}{255,255,0}
+\definecolor{yellow}{RGB}{0,255,0}
+
+\usepackage[
+%showframe,% Seitenlayout anzeigen
+left=3cm,
+right=2cm,
+top=2.5cm,
+bottom=2cm,
+%includeheadfoot
+]{geometry}
+
 \pagenumbering{arabic}
 
 \newcommand*{\thead}[1]{\multicolumn{1}{c}{\bfseries #1}}
 
-\rfoot{Page \thepage \hspace{1pt} of \pageref{LastPage}}
 
 \begin{document}
-\tableofcontents
-	
+\title{%
+	Fallstudie Home-Computer \\
+	\large Information Security Fundamentals \\
+	Hochschule Luzern}
+
+\author{Florian Bär}
 \maketitle
+\thispagestyle{empty}
+\clearpage
+\setcounter{page}{1}
+
+\tableofcontents
+
+\newpage
 
 \section{Einführung zum Minicase}
 
@@ -32,15 +56,16 @@ Die Familie Meier wohnt in einem dreistöckigen Haus im zweiten Stockwerk. Insge
 
 
 Es folgt eine Liste mit Dingen, welche schiefgehen können:
-1. Das Wireless brauch WEP. WEP ist veraltet und nicht sicher. Es ist ein upgrade
+\begin{enumerate}
+\item Das Wireless brauch WEP. WEP ist veraltet und nicht sicher. Es ist ein upgrade
 zu WPA2 empfohlen.
-•intritnumswahrscheinlichkeit: 4 - Da WEP schon veraltet ist und in wenigen
+* Eintritnumswahrscheinlichkeit: 4 - Da WEP schon veraltet ist und in wenigen
 Sekunden mit einem mittelklassigen Computer geknackt werden kann ist die
 Eintrittswahrscheinlichkeit hoch.
 • Schaden: 4 - Mit Zugriff auf das Netzwerk ist dem “Hacker” alles Möglich
 (Zugriff auf Computer, Kameras etc.).
 • RISIKO - Extrem (16)
-2. Die Spiele und Tools, welche Onkel Özutück mitbringt, könnten gecrackt sein.
+\item Die Spiele und Tools, welche Onkel Özutück mitbringt, könnten gecrackt sein.
 Cracks beinhalten ein Sicherheitsrisiko. Selbst wenn Sie nicht gefährlich sind, dann
 sind diese illegal verwendet.
 • Eintrittswahrscheinlichkeit: 4 - Sehr hoch, da im Text steht, dass der Onkel
@@ -48,85 +73,174 @@ sind diese illegal verwendet.
 • Schaden: 4 - Da Cracks häufig infiziert sind, ist das Risiko für das infizieren
 mit einer Schadsoftware sehr gross.
 • RISIKO - Extrem (16)
-3. Da Jan ein Computerfreak ist, versucht er bestimmt immer neue Dinge. Dabei
+\item Da Jan ein Computerfreak ist, versucht er bestimmt immer neue Dinge. Dabei
 wird das Sicherheitsrisiko von diesen “Nerd”-Tools oftmals unterschätzt.
 • Eintrittswahrscheinlichkeit: 3 - Es gibt auch auf Github und anderen Clouddi-
 ensten viele Schadsoftware, welche als kleine Tools getarnt sind.
 • Schaden: 4 - Wenn der PC mit Schadsoftware infiziert wurde, dann ist dieser
 Computer dieser ausgeliefert.
 • RISIKO - Hoch (12)
-4. Dora ist mit 12 Jahren ein junges Kind. Vor allem bei jungen Kindern sollte der
+\item Dora ist mit 12 Jahren ein junges Kind. Vor allem bei jungen Kindern sollte der
 Internetkonsum kontrolliert werden. Dazu gibt es passende Kinderschutzsoftware.
 • Eintrittswahrscheinlichkeit: 4 - Da Kinder tendenziell sich am PC explorativ
 verhalten, kann Dora einfach auf zwilichtige Webseiten gelangen.
 • Schaden: 4 - Unter Umständen
 • RISIKO - Extrem (16)
-5. Die Computer müssten auf einem NAS oder einem sonstigen Server ein Backup
+\item Die Computer müssten auf einem NAS oder einem sonstigen Server ein Backup
 haben. Falls einmal eine HD kaputt gehen sollte, müssen die Daten wiederherstellbar
 sein.
 • Eintrittswahrscheinlichkeit: 3
 • Schaden: 3
 • RISIKO - Hoch (9)
-6. Die Kameras könnten von einem Billighersteller sein, welcher die Sicherheitsysteme
+\item Die Kameras könnten von einem Billighersteller sein, welcher die Sicherheitsysteme
 des Systems nicht sehr verantwortungsvoll implementiert. Diese könnten dann
 “gehackt” werden und einen grossen Eingriff in die Privatsphäre der Familie.
 Eintrittswahrscheinlichkeit: 2
 • Schaden: 3
 • RISIKO - Mittel (6)
-7. Der Desktop PC der Eltern sollte nicht gleichzeitig als PC und als Printserver
+\item Der Desktop PC der Eltern sollte nicht gleichzeitig als PC und als Printserver
 verwendet werden. Server öffnen normalerweise Ports und Services für das Netzwerk
 und können so ein Sicherheitsrisiko darstellen.
 • Eintrittswahrscheinlichkeit: 2 - Games und Server öffnen Services für die
 Multiplayerfähigkeit. Diese stellen potenziell ein Sicherheitsrisiko dar.
 • Schaden: 3 -
 • RISIKO - Mittel (6)
-8. Windows Betriebssysteme besitzen zwar den Bitlocker, jedoch ist dieser Standard-
+\item Windows Betriebssysteme besitzen zwar den Bitlocker, jedoch ist dieser Standard-
 mässig nicht eingeschaltet und kann auch nur von forgeschrittenen Usern bedient
 werden. Dadurch sind die Daten auf den Disks nicht verschlüsselt und können unter
 Umständen ausgelesen werden.
 • Eintrittswahrscheinlichkeit: 2
 • Schaden: 3
 • RISIKO - Hoch (6)
-9. Bei einem Brand wären alle Computer zerstört und es könnten keine Daten wieder-
+\item Bei einem Brand wären alle Computer zerstört und es könnten keine Daten wieder-
 hergestellt werden.
 • Eintrittswahrscheinlichkeit: 2
 • Schaden: 4
 • RISIKO - Mittel (8)
-10. Benutzen die Kinder und die Eltern die selbe Mail? Dies könnte allenfalls auch zu
+\item Benutzen die Kinder und die Eltern die selbe Mail? Dies könnte allenfalls auch zu
 einem Risiko werden. Nicht alle Mails sind für die Augen der Kinder gedacht.
 • Eintrittswahrscheinlichkeit: 3
 • Schaden: 2
 • RISIKO - Mittel (6)
-
-
+\end{enumerate}
+\newpage
+\begin{landscape}
 \subsubsection{Risikomatrix}
 
-\begin{tabular}{|r|c|c|c|}
+\begin{tabular}{|r|c|c|c|c|c|}
 	\hline
-	\thead{Risiko ID} & \thead{EW\footnote{Eintrittswahrscheinlichkeit}} & \thead{SG\footnote{Schadensgrösse}} & \thead{R\footnote{Risiko}} \\ \hline
-	1 &  \cellcolor{blue!25}b & c & d \\ \hline
-	2 & b & c & d \\ \hline
-	3 &  \cellcolor{blue!25}b & c & d \\ \hline
-	4 & b & c & d \\ \hline
-	5 &  \cellcolor{blue!25}b & c & d \\ \hline
-	6 & b & c & d \\ \hline
-	7 &  \cellcolor{blue!25}b & c & d \\ \hline
-	8 & b & c & d \\ \hline
-	9 &  \cellcolor{blue!25}b & c & d \\ \hline
-	10 & b & c & d \\ \hline
+	\thead{ID} & \thead{Eintrittswahrscheinlichkeit} & \thead{Begründung} & \thead{Schadensgrösse} & \thead{Begründung} & \thead{Risiko} \\ \hline
+	1 &  \cellcolor{red}4 & GRUND & \cellcolor{red}4 & GRUND  & \cellcolor{red}16 \\ \hline
+	2 &  \cellcolor{red}4 & GRUND  & \cellcolor{red}4 & GRUND  & \cellcolor{red}16 \\ \hline
+	3 &  \cellcolor{orange}3 & GRUND  & \cellcolor{green}4 & GRUND  & \cellcolor{yellow}12 \\ \hline
+	4 &  \cellcolor{red}4 & GRUND  & \cellcolor{red}4 & GRUND  & \cellcolor{red}16 \\ \hline
+	5 &  \cellcolor{red}3 & GRUND  & \cellcolor{red}3 & GRUND  & \cellcolor{red}9 \\ \hline
+	6 &  \cellcolor{red}2 & GRUND  & \cellcolor{red}3 & GRUND  & \cellcolor{red}6 \\ \hline
+	7 &  \cellcolor{red}2 & GRUND  & \cellcolor{red}3 & GRUND  & \cellcolor{red}6 \\ \hline
+	8 &  \cellcolor{red}2 & GRUND  & \cellcolor{red}3 & GRUND  & \cellcolor{red}6 \\ \hline
+	9 &  \cellcolor{red}2 & GRUND  & \cellcolor{red}4 & GRUND  & \cellcolor{red}8 \\ \hline
+	10 &  \cellcolor{red}3 & GRUND  & \cellcolor{red}2 & GRUND  & \cellcolor{red}6 \\ \hline
 \end{tabular}
 
+\newpage
 
+\end{landscape}
 
 
 \subsection{Massnahmen}
 
 \subsubsection{Beschreibung der Massnahmen}
 
+1. WEP mit WPA2 ersetzen
+• Auf dem Router anstelle von WEP ein WPA2 Passwort setzen. WPA2 ist
+viel schwerer zu intercepten und somit besteht ein geringers Risiko von einem
+unerwünschten Zugriff.
+• Eintrittswahrscheinlichkeit: 1
+• Schaden: 2
+2. Teuererer Router mit Guest-Netz Funktion kaufen (z.B. Router ASUS RT-AC88U)
+• Somit ist es Gästen der Familie Meier nicht mehr möglich auf die selben
+Home-Resourcen zuzugreifen.
+• Eintrittswahrscheinlichkeit: 2
+• Schaden: 1
+3. Arbeits-PC von Spiele PC trennen.
+• Spiele können ungewollt Ports eines Systemes öffnen und damit ein Risiko
+darstellen. Zudem könne Mods (von Sohn Jan installiert) Sicherheitslücken
+beinhalten und ein Problem darstellen. Nach dieser Trennung sind grössere
+Lücken beim Arbeits-PC geschlossen.
+• Eintrittswahrscheinlichkeit: 2
+• Schaden: 2
+4. Dora nur ein Laptop mit “Kindersicherung” geben. Dazu Dora keine Administra-
+torenrechte geben. Diese Rechte reichen dem Kind.
+• Dora kann nun keine unerwünschte Software mehr installieren und von Ihr
+geht somit keine Gefahr mehr aus.
+• Eintrittswahrscheinlichkeit: 1
+• Schaden: 2
+5. NAS kaufen, um ein Backup von Daten zu machen. Dieses NAS könnte auch
+mittels Docker einen PrinterServer hosten, was auch das Problem der geöffneten
+Ports des Arbeits-PCs löst.
+• Daten sind nun Zentral gesichert. Bei einem allfälligen Hardware-Defekt sind
+die Daten nicht verloren.
+• + Option auf Google Business-Account um Backup verschlüsselt auf die Cloud
+zu synchronisieren
+• Eintrittswahrscheinlichkeit: 1
+• Schaden: 3
+6. Einen zweiten Router kaufen, um die Sensoren und Kameras in ein anderes Netz
+zu stellen.
+• Durch diese Netztrennung, ist das Heimnetz von allfälligen Hackerangriffen
+besser geschützt.
+• Eintrittswahrscheinlichkeit: 1
+• Schaden: 3
+7. Alle Computer mit Passwort sichern. Es sollten auf die Computer jeweils nur die
+Familienmitglieder Zugriff haben, welche dazu auch befugt sind.
+• Der Zugriff auf die Computer bei einem Diebstahl ist erschwert und die Daten
+auf diesen Computern sind besser geschützt.
+• Eintrittswahrscheinlichkeit: 1
+• Schaden: 1
+8. Software von Onkel Özutück sollte über den offiziellen Weg gekauft werden.
+• Die installierte Software ist sicher legal gekauft und hat mit einer grossen
+Wahrscheinlichkeit keine grossen Sicherheitsrisiken.
+• In betracht ziehen, dass Onkel Özutück in Zukunft die Computer nicht mehr
+verwalten sollte.
+• Eintrittswahrscheinlichkeit: 2
+• Schaden: 1
+9. Für die Arbeiten, welche Herr Meier zu Hause macht sollte ein Arbeits-PC mit
+nach Hause genommen werden können. Diese sind in der Regel von der zuständigen
+IT-Abteilung genügen sicher “gehardened”.
+• Die Familie muss sich nicht um die Sicherheit der Arbeitsdaten von Herrn
+Meier kümmern.
+
+• Eintrittswahrscheinlichkeit: 0
+• Schaden: 1
+10. Auch auf Smartphones und Tablets Antivirenprogramme installieren. Auch wenn
+diese noch nicht sehr verbreitet sind, besteht durch Schadsoftware an Handys bereits
+heute ein beträchtlicher Schaden.
+• AdWare und andere Schadsoftware wird auf dem Smartphone und Tablet
+erkannt. Somit sind nicht nur die Daten besser gschützt.
+• Eintrittswahrscheinlichkeit: 2
+• Schaden: 1
+
+\begin{landscape}
+\newpage
 \subsubsection{Risikomatrix nach Massnahmen}
 
+\begin{tabular}{|r|c|c|c|c|c|}
+	\hline
+	\thead{ID} & \thead{Eintrittswahrscheinlichkeit} & \thead{Begründung} & \thead{Schadensgrösse} & \thead{Begründung} & \thead{Risiko} \\ \hline
+	1 &  \cellcolor{red}4 & GRUND & \cellcolor{red}4 & GRUND  & \cellcolor{red}16 \\ \hline
+	2 &  \cellcolor{red}4 & GRUND  & \cellcolor{red}4 & GRUND  & \cellcolor{red}16 \\ \hline
+	3 &  \cellcolor{orange}3 & GRUND  & \cellcolor{green}4 & GRUND  & \cellcolor{yellow}12 \\ \hline
+	4 &  \cellcolor{red}4 & GRUND  & \cellcolor{red}4 & GRUND  & \cellcolor{red}16 \\ \hline
+	5 &  \cellcolor{red}3 & GRUND  & \cellcolor{red}3 & GRUND  & \cellcolor{red}9 \\ \hline
+	6 &  \cellcolor{red}2 & GRUND  & \cellcolor{red}3 & GRUND  & \cellcolor{red}6 \\ \hline
+	7 &  \cellcolor{red}2 & GRUND  & \cellcolor{red}3 & GRUND  & \cellcolor{red}6 \\ \hline
+	8 &  \cellcolor{red}2 & GRUND  & \cellcolor{red}3 & GRUND  & \cellcolor{red}6 \\ \hline
+	9 &  \cellcolor{red}2 & GRUND  & \cellcolor{red}4 & GRUND  & \cellcolor{red}8 \\ \hline
+	10 &  \cellcolor{red}3 & GRUND  & \cellcolor{red}2 & GRUND  & \cellcolor{red}6 \\ \hline
+\end{tabular}
 
 
+\newpage
+\end{landscape}
 \section{Fazit}
 
 
