@@ -1,10 +1,11 @@
 ---
-title: "Fallstudie Minicase - ISF"
+title: "Fallstudie Minicase"
 author: [Florian Bär]
 date: "2018-10-30"
 subject: "Information Security Fundamentals"
 keywords: [Information Security, ISF, HSLU]
-subtitle: "Mini-Case"
+subtitle: "Information Security Fundamentals"
+documentclass: scrartcl
 titlepage: true
 titlepage-color: "06386e"
 titlepage-text-color: "FFFFFF"
@@ -12,6 +13,19 @@ titlepage-rule-color: "FFFFFF"
 titlepage-rule-height: 1
 ...
 \newpage
+# Einführung zum MiniCase
+Die Familie Meier wohnt in einem dreistöckigen Haus im zweiten Stockwerk. Insgesamt teilen 6 Wohnungen das Haus
+auf. Eine fortschrittliche Familie aus dem Mittelstand mit bester Reputation. Für diese Familie sollte einen Massnahmenplan für allfällige Risiken gemäss der Aufgabenstellung \"Fallstudie: Die Heim PC Lösung\" erstellt werden.
+
+Für die Eintrittswahrscheinlichkeit und der potenzielle Schaden (Schadensausmass) der Ereignisse wird eine Skala von 1 (sehr kleine(r) Wahrscheinlichkeit/Schaden) bis 4 (sehr grosse(r) Wahrscheinlichkeit/Schaden) verwendet.
+
+## Risikomatrix
+Mit der folgenden Risikomatrix wird das Risiko der jeweiligen Punkte bewertet:
+
+![Risikomatrix](Risikomatrix.png "Risikomatrix")
+
+\newpage
+
 # Fallstudie ISF - Version 2
 
 ## Was könnte schiefgehen?
@@ -19,7 +33,7 @@ titlepage-rule-height: 1
 Es folgt eine Liste mit Dingen, welche schiefgehen können:
 
 1. Das Wireless brauch WEP. WEP ist veraltet und nicht sicher. Es ist ein upgrade zu WPA2 empfohlen.
-    - Eintrittswahrscheinlichkeit: 5
+    - Eintrittswahrscheinlichkeit: 4
     - Schaden: 4
 1. Es sollte vermieden werden, dass auf dem gleichen PC spiele gespielt werden sowie gearbeitet wird. Da Desktop-Computer allerdings eine bessere Rechenleistung haben, werden die Spiele mit grosser Wahrscheinlichkeit auf dem Desktop gespielt.
     - Eintrittswahrscheinlichkeit: 3
