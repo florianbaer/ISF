@@ -36,10 +36,6 @@ Es folgt eine Liste mit Dingen, welche schiefgehen können:
     - Eintrittswahrscheinlichkeit: 4 - Da WEP schon veraltet ist und in wenigen Sekunden mit einem mittelklassigen Computer geknackt werden kann ist die Eintrittswahrscheinlichkeit hoch.
     - Schaden: 4 - Mit Zugriff auf das Netzwerk ist dem "Hacker" alles Möglich (Zugriff auf Computer, Kameras etc.).
     - RISIKO - Extrem (16)
-1. Es sollte vermieden werden, dass auf dem gleichen PC spiele gespielt werden sowie gearbeitet wird. Da Desktop-Computer allerdings eine bessere Rechenleistung haben, werden die Spiele mit grosser Wahrscheinlichkeit auf dem Desktop gespielt.
-    - Eintrittswahrscheinlichkeit: 2 - Games öffnen Services für die Multiplayerfähigkeit. Diese stellen potenziell ein Sicherheitsrisiko dar.
-    - Schaden: 3 - 
-    - RISIKO - Mittel (6)
 1. Die Spiele und Tools, welche Onkel Özutück mitbringt, könnten gecrackt sein. Cracks beinhalten ein Sicherheitsrisiko. Selbst wenn Sie nicht gefährlich sind, dann sind diese illegal verwendet. 
     - Eintrittswahrscheinlichkeit: 4 - Sehr hoch, da im Text steht, dass der Onkel Özukück gratis Software mitbringt.
     - Schaden: 4 - Da Cracks häufig infiziert sind, ist das Risiko für das infizieren mit einer Schadsoftware sehr gross.
@@ -50,7 +46,7 @@ Es folgt eine Liste mit Dingen, welche schiefgehen können:
     - RISIKO - Hoch (12)
 1. Dora ist mit 12 Jahren ein junges Kind. Vor allem bei jungen Kindern sollte der Internetkonsum  kontrolliert werden. Dazu gibt es passende Kinderschutzsoftware.
     - Eintrittswahrscheinlichkeit: 4 - Da Kinder tendenziell sich am PC explorativ verhalten, kann Dora einfach auf zwilichtige Webseiten gelangen.
-    - Schaden: 4 - 
+    - Schaden: 4 - Unter Umständen
     - RISIKO - Extrem (16)
 1. Die Computer müssten auf einem NAS oder einem sonstigen Server ein Backup haben. Falls einmal eine HD kaputt gehen sollte, müssen die Daten wiederherstellbar sein.
     - Eintrittswahrscheinlichkeit: 3
@@ -60,34 +56,18 @@ Es folgt eine Liste mit Dingen, welche schiefgehen können:
     - Eintrittswahrscheinlichkeit: 2
     - Schaden: 3
     - RISIKO - Mittel (6)
-1. Für die Sensoren gelten die selben Risiken wie für die Kameras. Diese können ebenfalls als "Türe" zum Netz dienen.
-    - Eintrittswahrscheinlichkeit: 2
-    - Schaden: 3
-    - RISIKO - Mittel (6)
 1. Der Desktop PC der Eltern sollte nicht gleichzeitig als PC und als Printserver verwendet werden. Server öffnen normalerweise Ports und Services für das Netzwerk und können so ein Sicherheitsrisiko darstellen.
-    - Eintrittswahrscheinlichkeit: 3
-    - Schaden: 4
-    - RISIKO - Hoch (8)
-1. Das Wireless ist wahrscheinlich öffentlich sichtbar. Dadurch besteht ein Risiko durch die Nachbarn.
-    - Eintrittswahrscheinlichkeit: 4
-    - Schaden: 1
-    - RISIKO - Mttel (4)
+    - Eintrittswahrscheinlichkeit: 2 - Games und Server öffnen Services für die Multiplayerfähigkeit. Diese stellen potenziell ein Sicherheitsrisiko dar.
+    - Schaden: 3 - 
+    - RISIKO - Mittel (6)
 1. Windows Betriebssysteme besitzen zwar den Bitlocker, jedoch ist dieser Standardmässig nicht eingeschaltet und kann auch nur von forgeschrittenen Usern bedient werden. Dadurch sind die Daten auf den Disks nicht verschlüsselt und können unter Umständen ausgelesen werden.
     - Eintrittswahrscheinlichkeit: 2
     - Schaden: 3
     - RISIKO - Hoch (6)
-1. Falls Herr Meier zu Hause mit Daten von der Verwaltung arbeitet, kann das (Datenschutztechnischt) ein grosses Problem sein.
-    - Eintrittswahrscheinlichkeit: 4
-    - Schaden: 4
-    - RISIKO - Extrem (16)
 1. Bei einem Brand wären alle Computer zerstört und es könnten keine Daten wiederhergestellt werden. 
-    - Eintrittswahrscheinlichkeit: 1
+    - Eintrittswahrscheinlichkeit: 2
     - Schaden: 4
-    - RISIKO - Mittel (4)
-1. Die 12-jährige Dora könnte unkontrolliert Software installieren, welche Viren beinhaltet. Auch allfällige Toolbars sind bei Kindern schnell installiert.
-    - Eintrittswahrscheinlichkeit: 4
-    - Schaden: 2
-    - RISIKO - Hoch (8)
+    - RISIKO - Mittel (8)
 1. Benutzen die Kinder und die Eltern die selbe Mail? Dies könnte allenfalls auch zu einem Risiko werden. Nicht alle Mails sind für die Augen der Kinder gedacht.
     - Eintrittswahrscheinlichkeit: 3
     - Schaden: 2
