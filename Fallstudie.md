@@ -113,10 +113,6 @@ Es folgt eine Liste mit Dingen, welche schiefgehen können:
     - Die Familie muss sich nicht um die Sicherheit der Arbeitsdaten von Herrn Meier kümmern.
     - Eintrittswahrscheinlichkeit: 0
     - Schaden: 1
-1. Eine Checkliste erstellen, mit welcher 1/4 jährlich die Antiviren-Software überprüft wird. Zudem können bei diesem Check auch allfällige Updates gemacht werden.
-    - Antivirus und Betriebsystem ist immer auf dem neusten Stand. Somit sind grosse Sicherheitslücken zeitnah geschlossen.
-    - Eintrittswahrscheinlichkeit: 1
-    - Schaden: 2
 1. Auch auf Smartphones und Tablets Antivirenprogramme installieren. Auch wenn diese noch nicht sehr verbreitet sind, besteht durch Schadsoftware an Handys bereits heute ein beträchtlicher Schaden.
     - AdWare und andere Schadsoftware wird auf dem Smartphone und Tablet erkannt. Somit sind nicht nur die Daten besser gschützt.
     - Eintrittswahrscheinlichkeit: 2
