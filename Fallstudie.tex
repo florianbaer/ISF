@@ -3,6 +3,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[ngerman]{babel} 
 \usepackage{fancyhdr}
+\usepackage{tabularx}
 \usepackage{lastpage}
 %\usepackage{lscape} % ohne Ändern der Seite
 \usepackage{pdflscape} % mit Ändern der Seite
@@ -12,6 +13,11 @@
 \definecolor{orange}{RGB}{255,165,0}
 \definecolor{yellow}{RGB}{255,255,0}
 \definecolor{yellow}{RGB}{0,255,0}
+
+
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}
 
 \usepackage[
 %showframe,% Seitenlayout anzeigen
@@ -59,12 +65,6 @@ Es folgt eine Liste mit Dingen, welche schiefgehen können:
 \begin{enumerate}
 \item Das Wireless brauch WEP. WEP ist veraltet und nicht sicher. Es ist ein upgrade
 zu WPA2 empfohlen.
-* Eintritnumswahrscheinlichkeit: 4 - Da WEP schon veraltet ist und in wenigen
-Sekunden mit einem mittelklassigen Computer geknackt werden kann ist die
-Eintrittswahrscheinlichkeit hoch.
-• Schaden: 4 - Mit Zugriff auf das Netzwerk ist dem “Hacker” alles Möglich
-(Zugriff auf Computer, Kameras etc.).
-• RISIKO - Extrem (16)
 \item Die Spiele und Tools, welche Onkel Özutück mitbringt, könnten gecrackt sein.
 Cracks beinhalten ein Sicherheitsrisiko. Selbst wenn Sie nicht gefährlich sind, dann
 sind diese illegal verwendet.
@@ -127,10 +127,10 @@ einem Risiko werden. Nicht alle Mails sind für die Augen der Kinder gedacht.
 \begin{landscape}
 \subsubsection{Risikomatrix}
 
-\begin{tabular}{|r|c|c|c|c|c|}
+\begin{tabular}{|R{2cm}|C{2cm}|C{2cm}|C{2cm}|C{2cm}|C{2cm}|}
 	\hline
 	\thead{ID} & \thead{Eintrittswahrscheinlichkeit} & \thead{Begründung} & \thead{Schadensgrösse} & \thead{Begründung} & \thead{Risiko} \\ \hline
-	1 &  \cellcolor{red}4 & GRUND & \cellcolor{red}4 & GRUND  & \cellcolor{red}16 \\ \hline
+	1 &  \cellcolor{red}4 & Da WEP schon veraltet ist und in wenigen Sekunden mit einem mittelklassigen Computer geknackt werden kann ist die Eintrittswahrscheinlichkeit hoch. & \cellcolor{red}4 & Mit Zugriff auf das Netzwerk ist dem “Hacker” alles Möglich	(Zugriff auf Computer, Kameras etc.).  & \cellcolor{red}16 \\ \hline
 	2 &  \cellcolor{red}4 & GRUND  & \cellcolor{red}4 & GRUND  & \cellcolor{red}16 \\ \hline
 	3 &  \cellcolor{orange}3 & GRUND  & \cellcolor{green}4 & GRUND  & \cellcolor{yellow}12 \\ \hline
 	4 &  \cellcolor{red}4 & GRUND  & \cellcolor{red}4 & GRUND  & \cellcolor{red}16 \\ \hline
@@ -223,9 +223,9 @@ erkannt. Somit sind nicht nur die Daten besser gschützt.
 \newpage
 \subsubsection{Risikomatrix nach Massnahmen}
 
-\begin{tabular}{|r|c|c|c|c|c|}
+\begin{tabular}{|R{1cm}|C{4cm}|C{6.5cm}|C{2cm}|C{6.5cm}|C{2cm}|}
 	\hline
-	\thead{ID} & \thead{Eintrittswahrscheinlichkeit} & \thead{Begründung} & \thead{Schadensgrösse} & \thead{Begründung} & \thead{Risiko} \\ \hline
+	ID & Eintrittswahrscheinlichkeit & Begründung & Schadensgrösse & Begründung & Risiko \\ \hline
 	1 &  \cellcolor{red}4 & GRUND & \cellcolor{red}4 & GRUND  & \cellcolor{red}16 \\ \hline
 	2 &  \cellcolor{red}4 & GRUND  & \cellcolor{red}4 & GRUND  & \cellcolor{red}16 \\ \hline
 	3 &  \cellcolor{orange}3 & GRUND  & \cellcolor{green}4 & GRUND  & \cellcolor{yellow}12 \\ \hline
