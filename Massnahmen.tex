@@ -5,30 +5,28 @@
 \subsubsection{Beschreibung der Massnahmen}
 \begin{enumerate}
 
-\item WEP mit WPA2 ersetzen und somit das Netzwerk von fremden Zugriff schützen. Zudem mit einem neueren Router mit Guest-Zugriff die Netzwerke trennen.
+\item WEP mit WPA2 ersetzen und somit das Netzwerk vor unbefungten Zugriff schützen. Zudem mit einem neueren Router mit Guest-Zugriff die Netzwerke trennen.
 
-\item Software von einem vertrauenswürdigen Anbieter kaufen anstatt vom Onkel gecrackt mitbringen lassen.
+\item Software von einem vertrauenswürdigen Anbieter kaufen, statt vom Onkel Smirnow gecrackt mitbringen lassen.
 
 \item Alle Netzwerkgeräte mit einem Anti-Virus ausstatten um allfällige Infektionen frühzeitig erkennen.
 
-\item Dora nur ein Laptop mit “Kindersicherung” geben. Dazu Dora keine Administra-
-torenrechte geben. Diese Rechte reichen dem Kind. Falls Dora weiter Software benötigt, muss Sie diese bei den Eltern erhalten.
+\item Dora nur einen Laptop mit “Kindersicherung” geben. Dazu Dora keine Administratorenrechte geben. Diese Rechte reichen dem Kind. Falls Dora weitere Software benötigt, muss sie diese bei den Eltern erhalten.
 
 \item NAS kaufen, um ein Backup von Daten zu machen. Auf dem NAS ein RAID 6 konfigurieren, damit auch auf dem NAS allfällige Dateiverluste vermieden werden können.
 
 \item Einen zweiten Router kaufen, um die Sensoren und Kameras in ein anderes Netz
-zu stellen.
-• Durch diese Netztrennung, ist das Heimnetz von allfälligen Hackerangriffen
+zu stellen. Durch diese Netztrennung ist das Heimnetz von allfälligen Hackerangriffen
 besser geschützt.
 
 
 
-\item Ein Netzwerkdrucker kaufen, welcher von allen Netzwerkgeräten ein Drucken zulässt. Das in Massnahme 5 NAS könnte auch mittels Docker einen PrinterServer hosten, was auch das Problem der geöffneten Ports des Arbeits-PCs löst.
+\item Einen Netzwerkdrucker kaufen, welcher von allen Netzwerkgeräten das Drucken zulässt. Das in Massnahme 5 NAS könnte auch mittels Docker einen PrinterServer hosten, was auch das Problem der geöffneten Ports des Arbeits-PCs löst.
 
 
 \item Windows 10 Pro kaufen und damit Bitlocker einschalten, welcher die Disk verschlüsselt. Alternativ kann auch eine Linux-Distribution verwendet werden, welche dieses Feature bereits gratis anbietet.
 
-\item Mit einer Online-Backup-Lösung (Acronis Cloud / Google Cloud / Backblaze etc...) kann einfach und kostengünstig Cloud-Storage verwendet werden. Somit sind die Daten Ortsunabhängig gespeichert und auch bei einem Brand sind keine Daten verloren sondern wiederherstellbar
+\item Mit einer Online-Backup-Lösung (Acronis Cloud / Google Cloud / Backblaze etc...) kann einfach und kostengünstig Cloud-Storage verwendet werden. Somit sind die Daten ortsunabhängig gespeichert und auch bei einem Brand sind keine Daten verloren sondern wiederherstellbar
 
 
 \item Für jede Person im Haushalt ein eigenes Windows Konto und ein eigenes Mail-Konto erstellen. Somit ist der gegenseitige Zugriff verwährt. 
@@ -46,23 +44,23 @@ besser geschützt.
 		\hline
 		\textbf{ID} & \textbf{EW\footnote{Eintrittswahrscheinlichkeit}} & \textbf{Begründung} & \textbf{SG\footnote{Schadensgrösse}} & \textbf{Begründung} & \textbf{neues Risiko} & \textbf{Anwendbar\footnote{Massnahme einfach anwendbar}} \\ 
 		\hline
-		1 &  \cellcolor{green}1 & Auf dem Router anstelle von WEP ein WPA2 Passwort setzen. WPA2 ist viel schwerer zu intercepten und somit besteht ein geringers Risiko von einem unerwünschten Zugriff. & \cellcolor{yellow}2 & Falls einer Fremden Person der Zugriff auf das Netzwerk trotzdem gelingen sollte, ist man nicht vor Schaden geschützt. & \cellcolor{green}2 & \cellcolor{green} Ja  \\ \hline
+		1 &  \cellcolor{green}1 & Auf dem Router anstelle von WEP ein WPA2 Passwort setzen. WPA2 ist viel schwerer zu intercepten und somit besteht ein geringers Risiko von einem unerwünschten Zugriff. & \cellcolor{yellow}2 & Falls einer fremden Person der Zugriff auf das Netzwerk trotzdem gelingen sollte, ist man nicht vor Schaden geschützt. & \cellcolor{green}2 & \cellcolor{green} Ja  \\ \hline
 		
-		2 &  \cellcolor{green}1 & Spiele können trotzdem ungewollt Ports eines Systemes öffnen und damit ein Risiko darstellen. Zudem könne Mods Sicherheitslücken beinhalten und ein Problem darstellen. Das Risiko, welches Crack mitbringen ist allerdings eliminiert. & \cellcolor{yellow}2 & Das Risiko, welches von gekaufter Software ausgeht ist mit Massnahme (3) gelöst & \cellcolor{green}2 & \cellcolor{green} Ja  \\ \hline
+		2 &  \cellcolor{green}1 & Spiele können trotzdem ungewollt Ports eines Systemes öffnen und damit ein Risiko darstellen. Zudem könne Mods Sicherheitslücken beinhalten und ein Problem darstellen. Das Risiko, welches Cracks mitbringen ist allerdings eliminiert. & \cellcolor{yellow}2 & Das Risiko, welches von gekaufter Software ausgeht ist mit Massnahme (3) gelöst & \cellcolor{green}2 & \cellcolor{green} Ja  \\ \hline
 		
-		3 &  \cellcolor{yellow}2 & Mods und kleinere Informatik-Tools welche Schadcode enthalten können, werden von einem Virenscanner frühzeitig erkannt und eliminiert. & \cellcolor{green}1 & Falls doch eine Schadsoftware aufgrund der Dateisignatur unerkannt bleiben sollte, dann erkennt ein Antivirus aufgrund von Verhaltensmustern die Schadsoftware und der Schaden bleibt gering. & \cellcolor{green}2 & \cellcolor{green} Ja \\ \hline
+		3 &  \cellcolor{yellow}2 & Mods und kleinere Informatik-Tools welche Schadcode enthalten können, werden von einem Virenscanner frühzeitig erkannt und eliminiert. & \cellcolor{green}1 & Falls trotzdem eine Schadsoftware aufgrund der Dateisignatur unerkannt bleiben sollte, dann erkennt ein Antivirus anhand von Verhaltensmustern die Schadsoftware und der Schaden bleibt gering. & \cellcolor{green}2 & \cellcolor{green} Ja \\ \hline
 
-		4 &  \cellcolor{green}1 & Dora kann nun keine unerwünschte Software mehr installieren und von Ihr geht somit keine Gefahr mehr aus. & \cellcolor{yellow}2 & Dora kann die Computer im eigenen Netzwerk nicht mer infizieren und somit keinen Schaden verursachen.  & \cellcolor{green}2 & \cellcolor{green} Ja  \\ \hline
+		4 &  \cellcolor{green}1 & Dora kann nun keine unerwünschte Software mehr installieren und von ihr geht somit keine Gefahr mehr aus. & \cellcolor{yellow}2 & Dora kann die Computer im eigenen Netzwerk nicht mehr infizieren und somit keinen Schaden verursachen.  & \cellcolor{green}2 & \cellcolor{green} Ja  \\ \hline
 		
-		5 &  \cellcolor{yellow}2 & Es ist immernoch Möglich, dass eine Disk oder ein Computer kaputt geht. Auch wenn eine Disk auf dem NAS kaputt geht, besteht kein Schaden, da das auf dem NAS ein RAID 6 konfiguriert ist. & \cellcolor{green}1 & Falls eine Harddisk kaputt geht, sind Backups der jeweiligen Systeme vorhanden welche zurückgespielt werden können. & \cellcolor{green}1 & \cellcolor{green} Ja  \\ \hline
+		5 &  \cellcolor{yellow}2 & Es ist immernoch Möglich, dass eine Disk oder ein Computer kaputt geht. Auch wenn eine Disk auf dem NAS kaputt geht, besteht kein Schaden, da auf dem NAS ein RAID 6 konfiguriert ist. & \cellcolor{green}1 & Falls eine Harddisk kaputt geht, sind Backups der jeweiligen Systeme vorhanden welche zurückgespielt werden können. & \cellcolor{green}1 & \cellcolor{green} Ja  \\ \hline
 		
-		6 &  \cellcolor{yellow}2 & Falls die Kameras und Sensoren unsicher sind, können diese immernoch geknackt werden. & \cellcolor{yellow}2 & Es besteht kein Netzwerkzugriff mehr, falls diese Geräte gehackt werden. Allerdings hat der potenzielle Eindringling danach zugriff auf die Kameras und kann die Familie beobachten. Dieses Risiko besteht allerdings immer, wenn man Netzwerkkameras hat. & \cellcolor{yellow}4 & \cellcolor{green} Ja  \\ \hline
+		6 &  \cellcolor{yellow}2 & Falls die Kameras und Sensoren unsicher sind, können diese immernoch geknackt werden. & \cellcolor{yellow}2 & Es besteht kein Netzwerkzugriff mehr, falls diese Geräte gehackt werden. Allerdings hat der potenzielle Eindringling danach Zugriff auf die Kameras und kann die Familie beobachten. Dieses Risiko besteht allerdings immer, wenn man Netzwerkkameras hat. & \cellcolor{yellow}4 & \cellcolor{green} Ja  \\ \hline
 		
-		7 &  \cellcolor{green}1 & Der Fremdzugriff auf den PC aufgrund des Printservices ist nicht mehr Möglich. & \cellcolor{green}1 & Wenn es einem Hacker möglich ist, auf den Drucker zuzugreiffen, dann kann dieser nur noch Dokumente ausdrucken. & \cellcolor{green}1 & \cellcolor{green} Ja  \\ \hline
+		7 &  \cellcolor{green}1 & Der Fremdzugriff auf den PC aufgrund des Printservices ist nicht mehr möglich. & \cellcolor{green}1 & Wenn es einem Hacker möglich ist, auf den Drucker zuzugreifen, dann kann dieser nur noch Dokumente ausdrucken. & \cellcolor{green}1 & \cellcolor{green} Ja  \\ \hline
 		
-		8 &  \cellcolor{yellow}2 & Wenn die HardDisk verschlüsselt ist, dann sind die Daten der Familie geschützt und es kann nur noch die Hardware verwendet werden\footnote{dies ist zwar Schade, allerdings kein Sicherheitsrisiko}. & \cellcolor{green}1 & Der Zugriff auf die Computer bei einem Diebstahl ist erschwert und die Daten auf diesen Computern sind besser geschützt. Der Zugriff auf die Daten der Familie ist geschützt. & \cellcolor{green}2 & \cellcolor{green} Ja  \\ \hline
+		8 &  \cellcolor{yellow}2 & Wenn die Harddisk verschlüsselt ist, dann sind die Daten der Familie geschützt und es kann nur noch die Hardware verwendet werden\footnote{dies ist zwar Schade, allerdings kein Sicherheitsrisiko}. & \cellcolor{green}1 & Der Zugriff auf die Computer bei einem Diebstahl ist erschwert und die Daten auf diesen Computern sind besser geschützt. Der Zugriff auf die Daten der Familie ist geschützt. & \cellcolor{green}2 & \cellcolor{green} Ja  \\ \hline
 		
-		9 &  \cellcolor{yellow}2 &  Ein Brand kann immernoch ausbrechen, ist in der Schweiz allerdings immernoch selten. & \cellcolor{green}1 & Daten sind nun Zentral gesichert. Bei einem allfälligen Hardware-Defekt des NAS oder einem Brand sind die Daten auf dem Netzwerkspeicher nicht verloren. & \cellcolor{green}2 & \cellcolor{green} Ja  \\ \hline
+		9 &  \cellcolor{yellow}2 &  Ein Brand kann immernoch ausbrechen, ist in der Schweiz allerdings immernoch selten. & \cellcolor{green}1 & Daten sind nun zentral gesichert. Bei einem allfälligen Hardware-Defekt des NAS oder einem Brand sind die Daten auf dem Netzwerkspeicher nicht verloren. & \cellcolor{green}2 & \cellcolor{green} Ja  \\ \hline
 		
 		10 &  \cellcolor{green}1 & Wenn jede Person im Haushalt ein eigenes Konto hat, dann ist der gegenseitige Zugriff verwährt. & \cellcolor{yellow}2 & Wenn ein Familienmitglied jedoch etwas "dummes" mit dem eigenen Konto macht, dann muss diese auch die Verantwortung übernehmen und ist klar idientifizierbar. & \cellcolor{green}2 & \cellcolor{green} Ja  \\ \hline
 		
