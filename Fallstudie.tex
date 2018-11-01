@@ -4,7 +4,10 @@
 \usepackage[ngerman]{babel} 
 \usepackage{fancyhdr}
 \usepackage{tabularx}
+\usepackage{graphicx}
 \usepackage{lastpage}
+\usepackage{ltablex}
+\usepackage{lipsum}
 %\usepackage{lscape} % ohne Ändern der Seite
 \usepackage{pdflscape} % mit Ändern der Seite
 \usepackage{colortbl}
@@ -12,7 +15,7 @@
 \definecolor{red}{RGB}{255,0,0}
 \definecolor{orange}{RGB}{255,165,0}
 \definecolor{yellow}{RGB}{255,255,0}
-\definecolor{yellow}{RGB}{0,255,0}
+\definecolor{green}{RGB}{0,255,0}
 
 
 \newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
@@ -30,8 +33,6 @@ bottom=2cm,
 
 \pagenumbering{arabic}
 
-\newcommand*{\thead}[1]{\multicolumn{1}{c}{\bfseries #1}}
-
 
 \begin{document}
 \title{%
@@ -47,104 +48,17 @@ bottom=2cm,
 
 \tableofcontents
 
+\include{Einfuehrung}
+
 \newpage
 
-\section{Einführung zum Minicase}
 
-Die Familie Meier wohnt in einem dreistöckigen Haus im zweiten Stockwerk. Insgesamt teilen 6 Wohnungen das Haus auf. Eine fortschrittliche Familie aus dem Mittelstand mit bester Reputation. Für diese Familie sollte einen Massnahmenplan für allfällige Risiken gemäss der Aufgabenstellung "Fallstudie: Die Heim PC Lösung" erstellt werden. Für die Eintrittswahrscheinlichkeit und der potenzielle Schaden (Schadensausmass) der Ereignisse wird eine Skala von 1 (sehr kleine(r) Wahrscheinlichkeit/Schaden) bis 4 (sehr grosse(r) Wahrscheinlichkeit/Schaden) verwendet.
+\include{Risikobeschrieb}
 
-\section{Fallstudie ISF}
-
-\subsection{Risiken}
-
-\subsubsection{Beschreibung der Risiken}
-
-
-
-Es folgt eine Liste mit Dingen, welche schiefgehen können:
-\begin{enumerate}
-\item Das Wireless brauch WEP. WEP ist veraltet und nicht sicher. Es ist ein upgrade
-zu WPA2 empfohlen.
-\item Die Spiele und Tools, welche Onkel Özutück mitbringt, könnten gecrackt sein.
-Cracks beinhalten ein Sicherheitsrisiko. Selbst wenn Sie nicht gefährlich sind, dann
-sind diese illegal verwendet.
-• Eintrittswahrscheinlichkeit: 4 - Sehr hoch, da im Text steht, dass der Onkel
-Özukück gratis Software mitbringt.
-• Schaden: 4 - Da Cracks häufig infiziert sind, ist das Risiko für das infizieren
-mit einer Schadsoftware sehr gross.
-• RISIKO - Extrem (16)
-\item Da Jan ein Computerfreak ist, versucht er bestimmt immer neue Dinge. Dabei
-wird das Sicherheitsrisiko von diesen “Nerd”-Tools oftmals unterschätzt.
-• Eintrittswahrscheinlichkeit: 3 - Es gibt auch auf Github und anderen Clouddi-
-ensten viele Schadsoftware, welche als kleine Tools getarnt sind.
-• Schaden: 4 - Wenn der PC mit Schadsoftware infiziert wurde, dann ist dieser
-Computer dieser ausgeliefert.
-• RISIKO - Hoch (12)
-\item Dora ist mit 12 Jahren ein junges Kind. Vor allem bei jungen Kindern sollte der
-Internetkonsum kontrolliert werden. Dazu gibt es passende Kinderschutzsoftware.
-• Eintrittswahrscheinlichkeit: 4 - Da Kinder tendenziell sich am PC explorativ
-verhalten, kann Dora einfach auf zwilichtige Webseiten gelangen.
-• Schaden: 4 - Unter Umständen
-• RISIKO - Extrem (16)
-\item Die Computer müssten auf einem NAS oder einem sonstigen Server ein Backup
-haben. Falls einmal eine HD kaputt gehen sollte, müssen die Daten wiederherstellbar
-sein.
-• Eintrittswahrscheinlichkeit: 3
-• Schaden: 3
-• RISIKO - Hoch (9)
-\item Die Kameras könnten von einem Billighersteller sein, welcher die Sicherheitsysteme
-des Systems nicht sehr verantwortungsvoll implementiert. Diese könnten dann
-“gehackt” werden und einen grossen Eingriff in die Privatsphäre der Familie.
-Eintrittswahrscheinlichkeit: 2
-• Schaden: 3
-• RISIKO - Mittel (6)
-\item Der Desktop PC der Eltern sollte nicht gleichzeitig als PC und als Printserver
-verwendet werden. Server öffnen normalerweise Ports und Services für das Netzwerk
-und können so ein Sicherheitsrisiko darstellen.
-• Eintrittswahrscheinlichkeit: 2 - Games und Server öffnen Services für die
-Multiplayerfähigkeit. Diese stellen potenziell ein Sicherheitsrisiko dar.
-• Schaden: 3 -
-• RISIKO - Mittel (6)
-\item Windows Betriebssysteme besitzen zwar den Bitlocker, jedoch ist dieser Standard-
-mässig nicht eingeschaltet und kann auch nur von forgeschrittenen Usern bedient
-werden. Dadurch sind die Daten auf den Disks nicht verschlüsselt und können unter
-Umständen ausgelesen werden.
-• Eintrittswahrscheinlichkeit: 2
-• Schaden: 3
-• RISIKO - Hoch (6)
-\item Bei einem Brand wären alle Computer zerstört und es könnten keine Daten wieder-
-hergestellt werden.
-• Eintrittswahrscheinlichkeit: 2
-• Schaden: 4
-• RISIKO - Mittel (8)
-\item Benutzen die Kinder und die Eltern die selbe Mail? Dies könnte allenfalls auch zu
-einem Risiko werden. Nicht alle Mails sind für die Augen der Kinder gedacht.
-• Eintrittswahrscheinlichkeit: 3
-• Schaden: 2
-• RISIKO - Mittel (6)
-\end{enumerate}
-\newpage
 \begin{landscape}
-\subsubsection{Risikomatrix}
 
-\begin{tabular}{|R{2cm}|C{2cm}|C{2cm}|C{2cm}|C{2cm}|C{2cm}|}
-	\hline
-	\thead{ID} & \thead{Eintrittswahrscheinlichkeit} & \thead{Begründung} & \thead{Schadensgrösse} & \thead{Begründung} & \thead{Risiko} \\ \hline
-	1 &  \cellcolor{red}4 & Da WEP schon veraltet ist und in wenigen Sekunden mit einem mittelklassigen Computer geknackt werden kann ist die Eintrittswahrscheinlichkeit hoch. & \cellcolor{red}4 & Mit Zugriff auf das Netzwerk ist dem “Hacker” alles Möglich	(Zugriff auf Computer, Kameras etc.).  & \cellcolor{red}16 \\ \hline
-	2 &  \cellcolor{red}4 & GRUND  & \cellcolor{red}4 & GRUND  & \cellcolor{red}16 \\ \hline
-	3 &  \cellcolor{orange}3 & GRUND  & \cellcolor{green}4 & GRUND  & \cellcolor{yellow}12 \\ \hline
-	4 &  \cellcolor{red}4 & GRUND  & \cellcolor{red}4 & GRUND  & \cellcolor{red}16 \\ \hline
-	5 &  \cellcolor{red}3 & GRUND  & \cellcolor{red}3 & GRUND  & \cellcolor{red}9 \\ \hline
-	6 &  \cellcolor{red}2 & GRUND  & \cellcolor{red}3 & GRUND  & \cellcolor{red}6 \\ \hline
-	7 &  \cellcolor{red}2 & GRUND  & \cellcolor{red}3 & GRUND  & \cellcolor{red}6 \\ \hline
-	8 &  \cellcolor{red}2 & GRUND  & \cellcolor{red}3 & GRUND  & \cellcolor{red}6 \\ \hline
-	9 &  \cellcolor{red}2 & GRUND  & \cellcolor{red}4 & GRUND  & \cellcolor{red}8 \\ \hline
-	10 &  \cellcolor{red}3 & GRUND  & \cellcolor{red}2 & GRUND  & \cellcolor{red}6 \\ \hline
-\end{tabular}
 
-\newpage
-
-\end{landscape}
+\include{Risikomatrix}
 
 
 \subsection{Massnahmen}
@@ -230,12 +144,12 @@ erkannt. Somit sind nicht nur die Daten besser gschützt.
 	2 &  \cellcolor{red}4 & GRUND  & \cellcolor{red}4 & GRUND  & \cellcolor{red}16 \\ \hline
 	3 &  \cellcolor{orange}3 & GRUND  & \cellcolor{green}4 & GRUND  & \cellcolor{yellow}12 \\ \hline
 	4 &  \cellcolor{red}4 & GRUND  & \cellcolor{red}4 & GRUND  & \cellcolor{red}16 \\ \hline
-	5 &  \cellcolor{red}3 & GRUND  & \cellcolor{red}3 & GRUND  & \cellcolor{red}9 \\ \hline
-	6 &  \cellcolor{red}2 & GRUND  & \cellcolor{red}3 & GRUND  & \cellcolor{red}6 \\ \hline
-	7 &  \cellcolor{red}2 & GRUND  & \cellcolor{red}3 & GRUND  & \cellcolor{red}6 \\ \hline
-	8 &  \cellcolor{red}2 & GRUND  & \cellcolor{red}3 & GRUND  & \cellcolor{red}6 \\ \hline
-	9 &  \cellcolor{red}2 & GRUND  & \cellcolor{red}4 & GRUND  & \cellcolor{red}8 \\ \hline
-	10 &  \cellcolor{red}3 & GRUND  & \cellcolor{red}2 & GRUND  & \cellcolor{red}6 \\ \hline
+	5 &  \cellcolor{orange}3 & GRUND  & \cellcolor{orange}3 & GRUND  & \cellcolor{red}9 \\ \hline
+	6 &  \cellcolor{yellow}2 & GRUND  & \cellcolor{orange}3 & GRUND  & \cellcolor{red}6 \\ \hline
+	7 &  \cellcolor{yellow}2 & GRUND  & \cellcolor{orange}3 & GRUND  & \cellcolor{red}6 \\ \hline
+	8 &  \cellcolor{yellow}2 & GRUND  & \cellcolor{orange}3 & GRUND  & \cellcolor{red}6 \\ \hline
+	9 &  \cellcolor{yellow}2 & GRUND  & \cellcolor{red}4 & GRUND  & \cellcolor{red}8 \\ \hline
+	10 &  \cellcolor{orange}3 & GRUND  & \cellcolor{yellow}2 & GRUND  & \cellcolor{red}6 \\ \hline
 \end{tabular}
 
 
